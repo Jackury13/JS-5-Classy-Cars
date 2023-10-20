@@ -8,13 +8,14 @@ class Vehicle {
   }
             
   class Sedan extends Vehicle {
-    constructor(model, backUpCamera){
+    constructor(model, backupCamera){
       super(model)
       this.model = model 
-      this.backUpCamera = backUpCamera
+      this.backupCamera = backupCamera
     }
      drive(){
-        return `${this.model} drives`    }
+        return `${this.model} drives`    
+    }
   }   
 
   class SUV extends Vehicle {
@@ -24,7 +25,8 @@ class Vehicle {
       this.offroadPackage = offroadPackage
     }
      drive(){
-        return `${this.model} drive`    }
+        return `${this.model} drive`   
+     }
   }   
 
   class Truck extends Vehicle {
@@ -34,7 +36,8 @@ class Vehicle {
       this.towingCapacity = towingCapacity
     }
      drive(){
-        return `${this.model} drive`    }
+        return `${this.model} drive`    
+    }
   }   
 
   class EVSedan extends Vehicle {
@@ -42,12 +45,10 @@ class Vehicle {
       super(model)
       this.model = model 
     }
-  
-     drive(){
+    drive(){
         return `${this.model} drive`    
     }  
-
-    recharge(){
+     recharge(){
         return `${this.model} recharges`
     }
 }
